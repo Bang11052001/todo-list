@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Template • TodoMVC</title>
+		<link rel="stylesheet" href="./css/base.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+	</head>
+	<body>
+		<section class="todoapp">
+		</section>
+		<script type ='module' src ='./main.js'></script>
+		<script>
+			function focusfunc() {
+				var editElement = document.querySelectorAll('.edit');
+				if(editElement){
+					Array.from(editElement).map(input => {
+						input.focus();
+					})
+				}
+			}
+			function focusAdd() {
+				var inputElement = document.querySelector('header input');
+				if(inputElement){
+					inputElement.focus();
+				}
+			}
+		</script>
+	</body>
+</html>
